@@ -34,8 +34,11 @@
   width: 100%
   background-color: $primary
   transform: translateY(-200%)
+  transition: 0.3s
+  opacity: 0
   &_active
     transform: translateY(0)
+    opacity: 1
   &__nav
     display: flex
     align-items: center
@@ -56,6 +59,10 @@
     border-left: 1px solid rgba(#510bba, 0.1)
     height: 80px
     width: 70px
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
     &__line
       display: block
       width: 20px
